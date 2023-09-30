@@ -79,3 +79,4 @@ class TestApp:
             assert(response.status_code == 200)
             assert(response.content_type == 'application/json')
             assert(not BakedGood.query.filter_by(name="Apple Fritter").first())
+            
